@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    android:noHistory="true"
+    android:padding="10dp"
+    tools:context=".Filtro"
+    >
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="SCIO"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="50sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/logo"
+        android:background="@color/colorPrimary" />
+    <Button
+        android:id="@+id/Espanhol"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:text="Espanhol"/>
+    <Button
+        android:id="@+id/Ingles"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Espanhol"
+        android:text="Ingles"/>
+    <Button
+        android:id="@+id/Linguagens"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Ingles"
+        android:text="Linguagens"/>
+    <Button
+        android:id="@+id/Humanas"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Linguagens"
+        android:text="Humanas"/>
+    <Button
+        android:id="@+id/Matematica"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Humanas"
+        android:text="Matematica"/>
+    <Button
+        android:id="@+id/Natureza"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Matematica"
+        android:text="Natureza"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/Natureza"
+        android:background="@color/colorPrimaryDark" />
+    <Button
+        android:id="@+id/Estatictica"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Natureza"
+        android:text="Estatisiticas"/>
+
+</RelativeLayout>

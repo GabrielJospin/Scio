@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Scio</string>
+    <string name="pergunta">Provacao freestyle</string>
+    <string name="alternativa_a">a)</string>
+    <string name="alternativa_b">b)</string>
+    <string name="alternativa_c">c)</string>
+    <string name="alternativa_d">d)</string>
+    <string name="alternativa_e">e)</string>
+    <string name="pergunta2">A Terra é plana</string>
+
+
+</resources>

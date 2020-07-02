@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    android:noHistory="true"
+    android:padding="10dp"
+    tools:context=".Estatistica"
+    >
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="SCIO"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="50sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/logo"
+        android:background="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="5dp"
+        android:text="Estatisticas:"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/title"
+        android:background="@color/colorPrimaryDark" />
+    <TextView
+        android:id="@+id/Espanhol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background= "@drawable/rectangle"
+        android:padding="5dp"
+        android:text="@string/pergunta"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/Ingles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Espanhol"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background= "@drawable/rectangle"
+        android:padding="5dp"
+        android:text="@string/pergunta"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/Linguagens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Ingles"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background= "@drawable/rectangle"
+        android:padding="5dp"
+        android:text="@string/pergunta"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/Humanas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Linguagens"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background= "@drawable/rectangle"
+        android:padding="5dp"
+        android:text="@string/pergunta"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/Matematica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Humanas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background= "@drawable/rectangle"
+        android:padding="5dp"
+        android:text="@string/pergunta"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/Natureza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Matematica"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background= "@drawable/rectangle"
+        android:padding="5dp"
+        android:text="@string/pergunta"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+</RelativeLayout>
