@@ -14,7 +14,6 @@ class ViewHolder {
     public Button alternativaC;
     public Button alternativaD;
     public Button alternativaE;
-    public TextView teste;
 
     public Button espanhol;
     public Button ingles;

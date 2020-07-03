@@ -54,7 +54,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         this.mViewHolder.alternativaC = findViewById(R.id.c);
         this.mViewHolder.alternativaD = findViewById(R.id.d);
         this.mViewHolder.alternativaE = findViewById(R.id.e);
-        this.mViewHolder.teste = findViewById(R.id.teste);
 
 
 
@@ -144,15 +143,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             pointMateria.questao += 1;
             pointMateria.correto += 1;
             passe = true;
-            mViewHolder.teste.setText("Correto");
+            Toast toast = Toast.makeText(this, "Correto", Toast.LENGTH_SHORT);
+            toast.show();
         } else if (id == -1) {
             passe = true;
             this.mViewHolder.question.setText("Error");
         } else {
             pointMateria.questao++;
             passe = true;
-             mViewHolder.teste.setText("Errado");
-        }
+            Toast toast = Toast.makeText(this, "Errado", Toast.LENGTH_SHORT);
+            toast.show();
+         }
 
         try {
             Thread.sleep(1000);
@@ -180,17 +181,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         try {
             Random random = new Random();
 
-            this.mViewHolder.alternativaA.setTextColor(Color.parseColor("#000000"));
-            this.mViewHolder.alternativaB.setTextColor(Color.parseColor("#000000"));
-            this.mViewHolder.alternativaC.setTextColor(Color.parseColor("#000000"));
-            this.mViewHolder.alternativaD.setTextColor(Color.parseColor("#000000"));
-            this.mViewHolder.alternativaE.setTextColor(Color.parseColor("#000000"));
-
-
-
-
-            int n = random.nextInt(lim+1);
+            int n = random.nextInt(lim);
             String pergunta = databaseAcess.getPergunta(n,0, filtro);
+            if(pergunta.equals(null)) return sortear();
             this.mViewHolder.question.setText(pergunta);
             String imagem = databaseAcess.getImagem(n, filtro);
             this.mViewHolder.webView.loadUrl(imagem);

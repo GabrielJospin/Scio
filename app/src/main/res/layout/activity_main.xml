@@ -130,19 +130,6 @@
         android:background="@drawable/rectangle"
         android:text="@string/alternativa_e"
         android:textSize="15sp" />
-    <TextView
-        android:id="@+id/teste"
-        android:layout_below="@+id/e"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="hi Lorena"
-        android:textSize="15sp"
-        />
-
-
-
-
-
 
     </RelativeLayout>
 
